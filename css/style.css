@@ -8,6 +8,7 @@
 
 body {
     border: 1px solid purple;
+    margin: 0; /* Remove default body margin */
 }
 
 ul {
@@ -32,6 +33,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .one {
@@ -56,4 +58,38 @@ section {
     top: 0;
     background-color: #858687e6;
     z-index: 1000;
+}
+
+/* Style for the video container */
+.container {
+    position: relative;
+}
+
+/* Style for the video */
+#myVideo {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the content overlay */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style for the pause button */
+#myBtn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    width: 8rem;
 }
